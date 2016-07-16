@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mp.citysense.citysense.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pokemon_count"
+            android:textSize="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="ATT Park"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/pokemon"
+            android:textSize="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="@string/pokemon_not_around"
+            android:layout_below="@id/pokemon_count"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/temperature"
+            android:textSize="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pokemon"
+            android:gravity="center|top"
+            android:text="@string/temperature"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/textViewTemperature"
+            android:textSize="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="20 °F"
+            android:layout_below="@id/temperature"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/humidity"
+            android:textSize="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:layout_below="@id/textViewTemperature"
+            android:text="@string/humidity"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/textViewHumidity"
+            android:textSize="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="30%"
+            android:layout_below="@id/humidity"
+            android:layout_weight="3"/>
+
+        <ImageView
+            android:id="@+id/pokemonImg"
+            android:layout_width="270dp"
+            android:layout_height="360dp"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/textViewHumidity"
+            android:background="@drawable/pokemon_go_large"/>
+
+    </RelativeLayout>
+    <!--TextView
+        android:textSize="80dp"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="30\npeople"
+        android:layout_weight="1"/-->
+
+</LinearLayout>
